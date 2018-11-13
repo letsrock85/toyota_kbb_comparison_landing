@@ -1,0 +1,42 @@
+.vertical-align-md > a,
+.vertical-align-md > div,
+.vertical-align-md > img,
+.vertical-align-md > p,
+.vertical-align-md > span,
+.vertical-align-md::before {
+    vertical-align: middle;
+}
+
+.vertical-align-bm > a,
+.vertical-align-bm > div,
+.vertical-align-bm > img,
+.vertical-align-bm > p,
+.vertical-align-bm > span,
+.vertical-align-bm::before {
+    vertical-align: bottom;
+}
+
+.vertical-align-tp > a,
+.vertical-align-tp > div,
+.vertical-align-tp > img,
+.vertical-align-tp > p,
+.vertical-align-tp > span,
+.vertical-align-tp::before {
+    vertical-align: top;
+}
+
+div[class^="vertical-align"],
+div[class^="vertical-align"] > a,
+div[class^="vertical-align"] > div,
+div[class^="vertical-align"] > img,
+div[class^="vertical-align"] > p,
+div[class^="vertical-align"] > span {
+    display: inline-block;
+}
+
+div[class^="vertical-align"]::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    margin-right: -0.3em;
+}
